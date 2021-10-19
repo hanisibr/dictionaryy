@@ -39,7 +39,7 @@ const SearchBar = () => {
       </div>
 
       <div className="searchResults">
-        {searchResult.length < 1 && <div>Start searching!</div>}
+        {searchResult.length < 1 && !error && <div>Start searching!</div>}
         {error ? (
           <NoResults
             title={error.title}
