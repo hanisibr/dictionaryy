@@ -1,10 +1,10 @@
 import Footer from "./Footer";
+import ContributorList from "./ContributorList";
 import "./About.css";
 
 const About = () => {
   return (
-    <div>
-      <div className="navbar"></div>
+    <div className="main-container">
       <div className="about_us">
         About One Dictionary
         <div className="about_content">
@@ -15,17 +15,17 @@ const About = () => {
           </p>
           <p>
             One Dictionary services are backed by small team of beginner
-            dictionary editors and writers in Besquare.
+            developers - also dictionary editors and writers, in Besquare.
           </p>
           <p>
-            Thanks for expanding your ‘wor<span>l</span>d’ us.
+            Thanks for expanding your ‘wor
+            <span style={{ fontWeight: "bold" }}>l</span>d’ us.
           </p>
         </div>
       </div>
       <div className="contributors">
         Contributors
-        <div className="profile_img"></div>
-        <div className="profile_name"></div>
+        <ContributorList />
       </div>
       <Footer />
     </div>

@@ -1,9 +1,7 @@
+import "./Footer.css";
+
 const Footer = () => {
-  return (
-    <div>
-      <div className="footer"> &copy; 2021 One Dictionary </div>
-    </div>
-  );
+  return <footer className="footer"> &copy; 2021 One Dictionary </footer>;
 };
 
 export default Footer;
