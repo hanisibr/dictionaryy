@@ -1,0 +1,10 @@
+.phonetics {
+  font-size: 24px;
+  display: flex;
+}
+
+.pronunciation {
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+}
