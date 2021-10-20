@@ -1,7 +1,7 @@
 import React from "react";
 import "./ToggleSwitch.scss";
 
-const Switch = ({ toggleTheme, theme }) => {
+const Toggle = ({ toggleTheme, theme }) => {
   return (
     <label className="toggle-switch">
       <input
@@ -21,4 +21,4 @@ const Switch = ({ toggleTheme, theme }) => {
   );
 };
 
-export default Switch;
+export default Toggle;
