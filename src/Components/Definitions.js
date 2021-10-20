@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaChevronRight } from "react-icons/fa";
+//import { FaChevronRight } from "react-icons/fa";
+import "./Definitions.css";
 
 const Definitions = (props) => {
   const [showSynonym, setShowSynonym] = useState(false);
@@ -10,37 +11,43 @@ const Definitions = (props) => {
       {props.definitions.map((m) => {
         return (
           <div key={m.example}>
-            <div>{m.definition}</div>
-            <div>{m.example}</div>
+            <div className="word-definition">{m.definition}</div>
+            <div className="word-example">{m.example}</div>
             <div className="synonymsList">
               <div
+                className="synonym-btn"
                 onClick={() => {
                   setShowSynonym(!showSynonym);
                 }}
               >
-                Synonyms <FaChevronRight className="FaChevronRight" />
+                Synonyms &#9656;
               </div>
-              {m.synonyms.map((a) => {
-                if (showSynonym) {
-                  return <div>{a}</div>;
-                }
-                return <></>;
-              })}
+              <div className="synonym">
+                {m.synonyms.map((s) => {
+                  if (showSynonym) {
+                    return <div className="single-synonym">{s}</div>;
+                  }
+                  return <></>;
+                })}
+              </div>
             </div>
-            <div className="antonyms">
+            <div className="antonymsList">
               <div
+                className="antonym-btn"
                 onClick={() => {
                   setShowAntonym(!showAntonym);
                 }}
               >
-                Antonyms <FaChevronRight className="FaChevronRight" />
+                Antonyms &#9656;
               </div>
-              {m.antonyms.map((a) => {
-                if (showAntonym) {
-                  return <div>{a}</div>;
-                }
-                return <></>;
-              })}
+              <div className="antonym">
+                {m.antonyms.map((a) => {
+                  if (showAntonym) {
+                    return <div className="single-antonym">{a}</div>;
+                  }
+                  return <></>;
+                })}
+              </div>
             </div>
             <hr />
           </div>

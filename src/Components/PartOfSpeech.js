@@ -1,8 +1,12 @@
+import "./PartOfSpeech.css";
+
 const PartOfSpeech = (props) => {
   return (
-    <div className="partOfSpeech">
+    <div className="speech-container">
       {props.partOfSpeech.map((p) => (
-        <div key={p}>{p}</div>
+        <div key={p} className="partOfSpeech">
+          {p}
+        </div>
       ))}
     </div>
   );

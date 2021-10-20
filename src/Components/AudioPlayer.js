@@ -1,4 +1,5 @@
 import { FaVolumeUp } from "react-icons/fa";
+import "./AudioPlayer.css";
 
 const AudioPlayer = (props) => {
   const clickHandler = () => {

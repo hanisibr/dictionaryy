@@ -31,7 +31,7 @@ const SearchBar = () => {
           type="text"
           value={word}
           onChange={(event) => setWord(event.target.value)}
-          placeholder="Start searching a word!"
+          placeholder="Search a word!"
         />
         <button onClick={searchHandler}>
           <FaSearch className="FaSearch" />
@@ -39,7 +39,12 @@ const SearchBar = () => {
       </div>
 
       <div className="searchResults">
-        {searchResult.length < 1 && !error && <div>Start searching!</div>}
+        {searchResult.length < 1 && !error && (
+          <div className="startingMsg">
+            <p>Hello, there!</p>
+            <p>Start searching your word!</p>
+          </div>
+        )}
         {error ? (
           <NoResults
             title={error.title}

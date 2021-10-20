@@ -1,11 +1,11 @@
 import SearchBar from "./SearchBar";
 import Footer from "./Footer";
-import RandomWord from "./RandomWord";
+import Banner from "./Banner";
 
 const Home = () => {
   return (
     <div>
-      <RandomWord />
+      <Banner />
       <SearchBar />
       <Footer />
     </div>

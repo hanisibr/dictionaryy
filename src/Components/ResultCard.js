@@ -1,7 +1,7 @@
-//import AudioPlayer from "./AudioPlayer";
 import Phonetics from "./Phonetics";
 import PartOfSpeech from "./PartOfSpeech";
 import Definitions from "./Definitions";
+import "./ResultCard.css";
 
 const ResultCard = ({ word, meanings, phonetics }) => {
   const partOfSpeech = meanings.map((m) => m.partOfSpeech);
