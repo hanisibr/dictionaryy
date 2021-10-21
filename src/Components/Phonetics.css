@@ -8,3 +8,9 @@
   padding: 0 15px;
   align-items: center;
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .phonetics {
+    font-size: 18px;
+  }
+}

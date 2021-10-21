@@ -37,8 +37,43 @@ body {
   padding-bottom: 10px;
   text-align: center;
 }
-
-.definition {
+sj .definition {
   font-size: 24px;
   text-align: center;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .wotd {
+    background-color: #f9f9f9;
+    width: 430px;
+    height: fit-content;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 120px 260px;
+  }
+
+  .wotd-title {
+    font-size: 26px;
+    height: 90px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .genWord {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .theWord {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .definition {
+    font-size: 15px;
+    text-align: center;
+  }
 }

@@ -7,8 +7,30 @@
 
 .main-title {
   font-size: 64px;
+  line-height: 1;
 }
 
 .sub-title {
   font-size: 36px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .subtitle {
+    display: flex;
+  }
+
+  .main-title {
+    font-size: 28px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    border-right: 1px solid grey;
+    padding-right: 10px;
+  }
+
+  .sub-title {
+    font-size: 28px;
+    padding-left: 10px;
+  }
 }

@@ -11,3 +11,20 @@
   display: flex;
   align-items: center;
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    height: 250px;
+    padding: 0 15px;
+    display: flex;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .randomWord {
+    display: flex;
+    align-items: center;
+  }
+}

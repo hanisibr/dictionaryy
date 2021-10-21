@@ -72,3 +72,18 @@ input::placeholder {
   background: #c4c4c4c4;
   border-radius: 10px;
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .startingMsg {
+    font-size: 18px;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchResults {
+    width: 90%;
+    height: 278px;
+  }
+}
