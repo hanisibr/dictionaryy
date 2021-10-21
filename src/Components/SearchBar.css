@@ -72,3 +72,20 @@ input::placeholder {
   background: #c4c4c4c4;
   border-radius: 10px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .searchBar {
+    width: 85%;
+  }
+
+  .searchResults {
+    width: 85%;
+    height: 345px;
+  }
+
+  .startingMsg {
+    font-size: 22px;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+}

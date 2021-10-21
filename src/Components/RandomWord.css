@@ -42,3 +42,23 @@ body {
   font-size: 24px;
   text-align: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .wotd {
+    display: flex;
+    width: 280px;
+  }
+
+  .wotd-title {
+    font-size: 18px;
+    height: 72px;
+  }
+
+  .theWord {
+    font-size: 16px;
+  }
+
+  .definition {
+    font-size: 12px;
+  }
+}

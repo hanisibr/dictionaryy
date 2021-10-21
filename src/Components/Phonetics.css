@@ -8,3 +8,13 @@
   padding: 0 15px;
   align-items: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .pronunciation {
+    padding: 5px;
+  }
+
+  .phonetics {
+    font-size: 18px;
+  }
+}
