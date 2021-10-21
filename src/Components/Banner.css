@@ -18,7 +18,8 @@
     justify-content: center;
     row-gap: 10px;
   }
-  
+}
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .banner {
     height: 250px;
