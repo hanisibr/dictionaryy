@@ -1,12 +1,14 @@
-//import RandomWord from "./RandomWord";
+import RandomWord from "./RandomWord";
 import Subtitle from "./Subtitle";
 import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner dark:bg-black">
       <Subtitle />
-      <div className="randomWord">{/* <RandomWord /> */}</div>
+      <div className="randomWord animate__animated animate__fadeInRight">
+        <RandomWord />
+      </div>
     </div>
   );
 };

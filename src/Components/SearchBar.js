@@ -24,6 +24,13 @@ const SearchBar = () => {
     setWord("");
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      searchHandler();
+      console.log("enter press here");
+    }
+  };
+
   return (
     <div className="search-container">
       <div className="searchBar">
@@ -31,6 +38,7 @@ const SearchBar = () => {
           type="text"
           value={word}
           onChange={(event) => setWord(event.target.value)}
+          onKeyPress={(e) => handleKeyPress(e)}
           placeholder="Search a word!"
         />
         <button onClick={searchHandler}>
@@ -40,7 +48,7 @@ const SearchBar = () => {
 
       <div className="searchResults">
         {searchResult.length < 1 && !error && (
-          <div className="startingMsg">
+          <div className="startingMsg animate__animated animate__fadeIn animate__delay-2s">
             <p>Hello, there!</p>
             <p>Start searching your word!</p>
           </div>
