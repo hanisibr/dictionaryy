@@ -25,3 +25,18 @@
 .about-btn {
   padding-left: 35px;
 }
+/* 
+for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+}
