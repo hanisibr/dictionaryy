@@ -7,7 +7,6 @@ const Banner = () => {
     <div className="banner">
       <Subtitle />
       <div className="randomWord">
-        {" "}
         <RandomWord />
       </div>
     </div>
