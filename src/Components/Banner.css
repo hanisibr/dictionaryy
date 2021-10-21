@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+/* Small screens, laptops ----------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 200px;
+    padding: 0 50px;
+  }
+}
+
+/* Mobile Devices ----------- */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner {
     flex-direction: column;
@@ -20,6 +29,7 @@
   }
 }
 
+/* iPads, Tablets ---------- */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .banner {
     height: 250px;
