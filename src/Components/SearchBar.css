@@ -23,7 +23,7 @@
   margin-bottom: 20px;
 }
 
-input {
+.input {
   background-color: #c4c4c4;
   border-radius: 10px;
   height: 40px;
@@ -71,4 +71,37 @@ input::placeholder {
 .searchResults::-webkit-scrollbar-thumb {
   background: #c4c4c4c4;
   border-radius: 10px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .searchBar {
+    width: 85%;
+  }
+
+  .searchResults {
+    width: 85%;
+    height: 345px;
+  }
+
+  .startingMsg {
+    font-size: 22px;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .startingMsg {
+    font-size: 18px;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchResults {
+    width: 90%;
+    height: 278px;
+  }
 }
