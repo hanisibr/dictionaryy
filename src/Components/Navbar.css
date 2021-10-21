@@ -25,6 +25,12 @@
 .about-btn {
   padding-left: 35px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
 /* 
 for tablet */
 
